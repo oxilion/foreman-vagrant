@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "centos64"
 
-  config.vm.provider :virtualbox do |v, override|
+  config.vm.provider :libvirt do |v, override|
     override.vm.box_url = "http://kwok.cz/centos64.box"
   end
 
