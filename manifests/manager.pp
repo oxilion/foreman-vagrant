@@ -24,3 +24,9 @@ class {'foreman_proxy':
 class {'foreman':
   authentication => true,
 }
+
+# FIXME Properly manage the firewall
+service {'iptables':
+  ensure => stopped,
+  enable => false,
+}

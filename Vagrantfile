@@ -18,4 +18,6 @@ Vagrant.configure("2") do |config|
     puppet.manifests_path = "manifests"
     puppet.manifest_file  = "manager.pp"
   end
+
+  config.vm.network :forwarded_port, guest: 443, host: 8443
 end
