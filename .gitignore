@@ -1,1 +1,3 @@
+.rspec_system/
 .vagrant
+Gemfile.lock
